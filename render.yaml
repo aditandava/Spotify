@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: spotify-bot
+    runtime: docker
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: SPOTIFY_CLIENT_ID
+        sync: false
+      - key: SPOTIFY_CLIENT_SECRET
+        sync: false
